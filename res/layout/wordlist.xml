@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/wordlist"
+	android:orientation="vertical"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	>
+	
+<ScrollView 
+	android:id="@+id/wordlist_scrollview"
+	android:orientation="horizontal"
+	android:scrollbarStyle="outsideInset" android:scrollbars="horizontal|vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbarAlwaysDrawHorizontalTrack="true" android:scrollbarAlwaysDrawVerticalTrack="false">
+	
+<LinearLayout
+	android:id="@+id/wordlist_linearlayout"
+	android:orientation="vertical"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	></LinearLayout>
+</ScrollView>
+
+<TextView android:id="@+id/wordlist_textview"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:text=""
+	android:visibility="gone"/>
+
+<Button
+	android:id="@+id/wordlist_button" 
+	android:visibility="gone" android:layout_weight="1" android:layout_height="?android:attr/listPreferredItemHeight" android:layout_width="wrap_content"
+	android:paddingLeft="5px" android:paddingRight="5px" android:ellipsize="middle" />
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/wordlist_buttonbar"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_weight="1"
+		android:layout_height="?android:attr/listPreferredItemHeight">
+		</LinearLayout>
+		
+		
+</LinearLayout>
+
+	
